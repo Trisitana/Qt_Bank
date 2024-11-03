@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>xicons/close.svg</file>
+        <file>xicons/maximize.svg</file>
+        <file>xicons/minimize.svg</file>
+        <file>xicons/restore.svg</file>
+        <file>icons/password.png</file>
+        <file>icons/user.png</file>
+        <file>admin.txt</file>
+        <file>icons/add.png</file>
+        <file>icons/ashbin.png</file>
+        <file>icons/tbtn_close.svg</file>
+        <file>icons/tbtn_search.svg</file>
+        <file>icons/search.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminWindow</class>
+ <widget class="QMainWindow" name="AdminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>管理员系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QTableView" name="userTable">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+      <widget class="QTableView" name="infoTable">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>账号</string>
+    </property>
+    <addaction name="infoAction"/>
+    <addaction name="separator"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>操作</string>
+    </property>
+    <addaction name="addUserAction"/>
+    <addaction name="removeUserAction"/>
+    <addaction name="inquiryAction"/>
+    <addaction name="separator"/>
+    <addaction name="transactionAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>利率调整</string>
+    </property>
+    <addaction name="demandRateAction"/>
+    <addaction name="year1RateAction"/>
+    <addaction name="year3RateAction"/>
+    <addaction name="year5RateAction"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="exitAction">
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </action>
+  <action name="infoAction">
+   <property name="text">
+    <string>营业员信息</string>
+   </property>
+  </action>
+  <action name="addUserAction">
+   <property name="text">
+    <string>添加储户</string>
+   </property>
+  </action>
+  <action name="removeUserAction">
+   <property name="text">
+    <string>删除储户</string>
+   </property>
+  </action>
+  <action name="inquiryAction">
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </action>
+  <action name="transactionAction">
+   <property name="text">
+    <string>业务操作</string>
+   </property>
+  </action>
+  <action name="demandRateAction">
+   <property name="text">
+    <string>活期利率</string>
+   </property>
+  </action>
+  <action name="year1RateAction">
+   <property name="text">
+    <string>1年期利率</string>
+   </property>
+  </action>
+  <action name="year3RateAction">
+   <property name="text">
+    <string>3年期利率</string>
+   </property>
+  </action>
+  <action name="year5RateAction">
+   <property name="text">
+    <string>5年期利率</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
